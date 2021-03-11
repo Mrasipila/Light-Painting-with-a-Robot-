@@ -1,8 +1,9 @@
 /*-----------------------------------------
-          Nuage
-        Richard et Falitiana, 2021
+          Motor control
+        Sylvain BERTRAND, 2015
   -----------------------------------------*/
 
+/* Pour les pixels : */
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
 #include <avr/power.h>
@@ -10,72 +11,107 @@
 #define PIN       8
 #define NUMPIXELS 7
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
-// left and right motors with corresponding pins
+#define DELAYVAL 500
+
+
+
+
 #include <motor.h>
+
+// left and right motors with corresponding pins
 Motor leftMotor(leftMotorPwmPin, leftMotorDirPin);
 Motor rightMotor(rightMotorPwmPin, rightMotorDirPin);
+
 // global variables
 int uL = 0;
 int uR = 0;
-
-
-
-void setup() 
-{
+int leftInc = 10;
+int rightInc = 10;
+int i = 0;
+int j = 0;
+unsigned long totalTemps, totalTemps2, delayCommande;
+// ************** SETUP *********************
+void setup() {
+  // put your setup code here, to run once:
   Serial.begin(9600);
-  // NEOPIXELS
-  #if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
-    clock_prescale_set(clock_div_1);
-  #endif
+ // NEOPIXELS
+#if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
+  clock_prescale_set(clock_div_1);
+#endif
   pixels.begin();
   pixels.clear();
-
+  // for(int i=0; i<NUMPIXELS; i++)
+  // {
+  //    pixels.setPixelColor(i, pixels.Color(10, 10, 10));
   pixels.setPixelColor(0, pixels.Color(100, 0, 0));
   pixels.show();
+
+
 }
-
-
-void loop() 
-{
+// *************** LOOP **********************
+void loop() {
   delay(10000);
 
-  for(int i = 0; i < 7; i++)
+  for(i=0;i<7;i++)
   {
-    //demi-tour en avant (cyan) (delay1000)
+ //demitour en avant (cyan)
     pixels.clear();
     pixels.show();
-    pixels.setPixelColor(0, pixels.Color(10, 0, 5+i*5));
+    pixels.setPixelColor(0, pixels.Color(0, 10+i*10,0 ));
     pixels.show();
     uL = 200;
     uR = 50;
-    leftMotor.setU(uL);
-    rightMotor.setU(uR);
-    delay(1250);
+    
+    totalTemps2 = millis();
+    delayCommande=1250;
+    while ((delayCommande+totalTemps2)>(totalTemps))//remplace delay(1000);
+    {
+      totalTemps = millis();
+      leftMotor.setU(uL);
+      rightMotor.setU(uR);
+    }
     
     uL = 0;
     uR = 0;
-    leftMotor.setU(uL);
-    rightMotor.setU(uR);
-    delay(100);
-    
-    //demi-tour en arriere (violet)
+    totalTemps2 = millis();
+    delayCommande=100;
+    while ((delayCommande+totalTemps2)>(totalTemps))//remplace delay(100);
+    {
+      totalTemps = millis();
+      leftMotor.setU(uL);
+      rightMotor.setU(uR);
+    }
+
+
     pixels.clear();
     pixels.show();
-    pixels.setPixelColor(0, pixels.Color(0, 10,5+i*5 ));
+    pixels.setPixelColor(0, pixels.Color(0, 10+i*10,0 ));
     pixels.show();
     uL = -50;
     uR = -200;
-    leftMotor.setU(uL);
-    rightMotor.setU(uR);
-    delay(1000);
+    
+    totalTemps2 = millis();
+    delayCommande=1000;
+    while ((delayCommande+totalTemps2)>(totalTemps))//remplace delay(1000);
+    {
+      totalTemps = millis();
+      leftMotor.setU(uL);
+      rightMotor.setU(uR);
+    }
     
     uL = 0;
     uR = 0;
-    leftMotor.setU(uL);
-    rightMotor.setU(uR);
-    delay(100);
-  }
-  
+    totalTemps2 = millis();
+    delayCommande=100;
+    while ((delayCommande+totalTemps2)>(totalTemps))//remplace delay(100);
+    {
+      totalTemps = millis();
+      leftMotor.setU(uL);
+      rightMotor.setU(uR);
+    }
+    //demitour en arriere (violet)
+    
+  }    
   leftMotor.stop();
   rightMotor.stop();
 }

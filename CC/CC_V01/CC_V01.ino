@@ -1,6 +1,6 @@
   /*-----------------------------------------
-Encoder with Interruption test
-Falitiana ANDRIANANTOANDRO, 2021
+    CC.ino (v1)
+    Implémentation des interruptions
 -----------------------------------------*/
 
 #include <motor.h>

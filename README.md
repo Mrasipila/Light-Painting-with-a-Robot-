@@ -28,13 +28,6 @@ Pour cela il faut télécharger le répertoire Arduino et copier les deux dossie
 
 Si vous souhaitez ouvrir le code d'une forme particulière, télécharger le fichier du répertoire correspondant à la forme
 
-Il y a 5 figures déjà designées :
-- La Pokeball
-- La Mandala
-- Le E
-- La Spirale
-- La bordure
-- Le Nuage
 
 
 Trois codes de base (à compléter avec des instructions) :
@@ -50,4 +43,16 @@ Trois codes de base (à compléter avec des instructions) :
 - CC.ino
   
   Contient le code de base pour le moteur à courant continu
+  
+  
+
+Il y a plusieurs figures prêtes à l'emploi :
+- La Pokeball
+- La Mandala
+- Le E
+- La Spirale
+- La bordure
+- Le Nuage
+- Le triangle
+- Le cube
   

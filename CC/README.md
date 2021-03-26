@@ -1,3 +1,5 @@
+CC_BO : Boucle ouverte sans encodeurs
+
 CC_V01 : Implémentation d’interruptions pour récupérer les valeurs des encodeurs
 
 CC_V02 : Utilisation de la librairie PID_v1

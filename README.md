@@ -37,13 +37,17 @@ Il y a 5 figures déjà designées :
 - Le Nuage
 
 
- contient trois codes : 
-  - PP_SINGLE_IMAGE.ino
+Trois codes de base (à compléter avec des instructions) :
+
+- PP_SINGLE_IMAGE.ino
+  
   Contient le code de base pour le moteur pas à pas avec une seule image
   
-  - PP_MULTIPLE_IMAGES.ino
+- PP_MULTIPLE_IMAGES.ino
+  
   Contient le code de base pour le moteur pas à pas avec plusieurs images
 
-  - CC.ino
+- CC.ino
+  
   Contient le code de base pour le moteur à courant continu
   

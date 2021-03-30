@@ -1,12 +1,6 @@
 /*--------------------------------------------------------
-      CC.ino v12 :
-
-   Rajout d'un couple de gain pour setpoint = 10
-
-    Sources :
-    http://www.ferdinandpiette.com/blog/2011/08/implementer-un-pid-sans-faire-de-calculs/
-    http://www.ferdinandpiette.com/blog/2012/04/asservissement-en-vitesse-dun-moteur-avec-arduino/
-  ------------------------------------------------------*/
+      CC_V12.ino
+ ------------------------------------------------------*/
 // On définit les pins des encodeurs
 #include <Encoder.h>
 Encoder leftEnc(19, 18);
@@ -83,7 +77,8 @@ void loop()
   if (k == 0)
   {    
     /* Mettre ici les move(), neopixel() et stopMotors() */
-    
+
+       
     /*                                                   */
     stopMotors();
     k = 1;
@@ -171,15 +166,26 @@ void initialize (double _leftSetpoint, double _rightSetpoint)
 
   // AJUSTE LES COEFF FONCTION DE LA CONSIGNE
 
+  // Sp = 0 
+  if (abs(_leftSetpoint) == 0 || abs(_rightSetpoint) == 0)
+  {
+    leftKp  = 0.3;
+    leftKi  = 0.0;
+    leftKd  = 0.0;   
+    rightKp = 0.3;
+    rightKi = 0.0;
+    rightKd = 0.0;
+  }
+
   
   // Sp = 10 Kp = 0.3 Ki = 0 Kd = 0 : intervalle entre 0 et 20
-  if (abs(_leftSetpoint) > 0 || abs(_rightSetpoint) <= 20)
+  if (abs(_leftSetpoint) > 0 && abs(_leftSetpoint) <= 20)
   {
     leftKp  = 0.3;
     leftKi  = 0.0;
     leftKd  = 0.0;
   }
-  if (abs(_leftSetpoint) > 0 || abs(_rightSetpoint) <= 20)
+  if (abs(_rightSetpoint) > 0 && abs(_rightSetpoint) <= 20)
   {
     rightKp = 0.3;
     rightKi = 0.0;
@@ -188,13 +194,13 @@ void initialize (double _leftSetpoint, double _rightSetpoint)
   
 
   // Sp = 30 Kp = 0.4 Ki = 0 Kd = 1.5 : intervalle entre 20 et 45
-  if (abs(_leftSetpoint) > 20 || abs(_leftSetpoint) <= 45)
+  if (abs(_leftSetpoint) > 20 && abs(_leftSetpoint) <= 45)
   {
     leftKp  = 0.4;
     leftKi  = 0.0;
     leftKd  = 1.5;
   }
-  if (abs(_leftSetpoint) > 20 || abs(_leftSetpoint) <= 45)
+  if (abs(_rightSetpoint) > 20 && abs(_rightSetpoint) <= 45)
   {
     rightKp = 0.4;
     rightKi = 0.0;
@@ -202,26 +208,26 @@ void initialize (double _leftSetpoint, double _rightSetpoint)
   }
 
   // Sp = 60  Kp = 0.06 Ki = 0 Kd = 0.3 : intervalle entre 45 et 75
-  if (abs(_leftSetpoint) > 45 || abs(_leftSetpoint) <= 75 )
+  if (abs(_leftSetpoint) > 45 && abs(_leftSetpoint) <= 75 )
   {
     leftKp  = 0.06;
     leftKi  = 0.0;
     leftKd  = 0.3;
   }
-  if (abs(_rightSetpoint) > 45 || abs(_rightSetpoint) <= 75)
+  if (abs(_rightSetpoint) > 45 && abs(_rightSetpoint) <= 75)
   {
     rightKp = 0.06;
     rightKi = 0.0;
     rightKd = 0.3;
   }
   // Sp = 90  Kp = 0.8  Ki = 0 Kd = 2.5 : intervalle entre 75 et 105
-  if (abs(_leftSetpoint) > 75 || abs(_leftSetpoint) <= 105 )
+  if (abs(_leftSetpoint) > 75 && abs(_leftSetpoint) <= 105)
   {
     leftKp  = 0.8;
     leftKi  = 0.0;
     leftKd  = 2.5;
   }
-  if (abs(_rightSetpoint) > 75 || abs(_rightSetpoint) <= 105)
+  if (abs(_rightSetpoint) > 75 && abs(_rightSetpoint) <= 105)
   {
     rightKp = 0.8;
     rightKi = 0.0;
@@ -229,13 +235,13 @@ void initialize (double _leftSetpoint, double _rightSetpoint)
   }
   // Sp = 120 Kp = 0.6  Ki = 0 Kd = 0 : intervalle entre 105 et l'infini
   // l'output est bornée plus haut dans la fonction move()
-  if (abs(_leftSetpoint) > 105 || abs(_rightSetpoint) <= 120)
+  if (abs(_leftSetpoint) > 105 && abs(_leftSetpoint) <= 120)
   {
     leftKp  = 0.6;
     leftKi  = 0.0;
     leftKd  = 0.0;
   }
-  if (abs(_rightSetpoint) > 105 || abs(_rightSetpoint) <= 120)
+  if (abs(_rightSetpoint) > 105 && abs(_rightSetpoint) <= 120)
   {
     rightKp = 0.6;
     rightKi = 0.0;
@@ -267,8 +273,8 @@ void wait(double waitTime)
 
 void stopMotors()
 {
-  DEB = 0;
-  move(0, 0, 1000);
+  DEB = 1;
+  move(0, 0, 500);
   rightMotor.stop();
   leftMotor.stop();
   DEB = 1;

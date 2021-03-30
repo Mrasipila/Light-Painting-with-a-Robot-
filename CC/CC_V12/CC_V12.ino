@@ -1,5 +1,6 @@
 /*--------------------------------------------------------
       CC.ino v12
+  Implémentation de la fonction initialize()
  ------------------------------------------------------*/
 // On définit les pins des encodeurs
 #include <Encoder.h>

@@ -221,7 +221,7 @@ void initialize (double _leftSetpoint, double _rightSetpoint)
     leftKi  = 0.0;
     leftKd  = 2.5;
   }
-  if (abs(_rightSetpoint) > 75 || abs(_rightSetpoint) <= 75)
+  if (abs(_rightSetpoint) > 75 || abs(_rightSetpoint) <= 105)
   {
     rightKp = 0.8;
     rightKi = 0.0;
@@ -229,15 +229,26 @@ void initialize (double _leftSetpoint, double _rightSetpoint)
   }
   // Sp = 120 Kp = 0.6  Ki = 0 Kd = 0 : intervalle entre 105 et l'infini
   // l'output est bornée plus haut dans la fonction move()
-  if (abs(_leftSetpoint) > 75)
+  if (abs(_leftSetpoint) > 105 || abs(_rightSetpoint) <= 120)
   {
     leftKp  = 0.6;
     leftKi  = 0.0;
     leftKd  = 0.0;
   }
-  if (abs(_rightSetpoint) > 75)
+  if (abs(_rightSetpoint) > 105 || abs(_rightSetpoint) <= 120)
   {
     rightKp = 0.6;
+    rightKi = 0.0;
+    rightKd = 0.0;
+  }
+
+  // Double securité pour éviter un setU > 250
+  else if (abs(_leftSetpoint) > 120 || abs(_rightSetpoint) > 120)
+  {
+    leftKp  = 0.0;
+    leftKi  = 0.0;
+    leftKd  = 0.0;    
+    rightKp = 0.0;
     rightKi = 0.0;
     rightKd = 0.0;
   }

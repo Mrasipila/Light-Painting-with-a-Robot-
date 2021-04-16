@@ -9,3 +9,6 @@ Dans cette partie on aura accès au code utilisé par les robots pour réalisé 
 
 ## Les Résultats 
 
+image 0          |  image 1           |  image 2           |  image 3   
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![IMG_0054 2](https://user-images.githubusercontent.com/30113273/115061555-9e93ff80-9ee9-11eb-8598-621cf96a40c6.JPG) |  ![IMG_0062](https://user-images.githubusercontent.com/30113273/115061577-a3f14a00-9ee9-11eb-8db7-18c50e95a0cb.JPG) | ![IMG_0061](https://user-images.githubusercontent.com/30113273/115061600-aa7fc180-9ee9-11eb-83f4-30fe01503224.JPG) | ![IMG_0099](https://user-images.githubusercontent.com/30113273/115061618-b075a280-9ee9-11eb-8c49-9d418801fea3.JPG)

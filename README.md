@@ -72,8 +72,8 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 recherche, recherche et test des différentes librairies (Fast_PID), implémentation des méthodes de calcul,  
 réalisation du cahier des charges, conception du robot à moteur pas à pas, simulation  
 **Raphaël KOSKAS :** Correcteur PID manuel, conception robot à moteur courant continu  
-**Richard TAQUET :** Réalisations des formes  
-**Falitianna ANDRIANANTOANDRO :** Réalisation des formes  
+**Richard TAQUET :** Réalisations de formes en moteur à courant continu  
+**Falitianna ANDRIANANTOANDRO :** Réalisation de formes en moteur à courant continu  
 
 ## Remerciements
 

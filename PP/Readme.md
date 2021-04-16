@@ -5,3 +5,5 @@ Dans cette partie on aura accès au code utilisé par les robots pour réalisé 
 
 **PP_Single_Image :** Va prendre un ensemble de points pour réaliser la forme désirée
 
+**Dans le Traitement d'images :** On trouvera deux programme, l'un va traiter une vidéo passer en paramètre et donner en sortie des images, l'autre va utiliser ces images en sortie pour générer une suite de points
+

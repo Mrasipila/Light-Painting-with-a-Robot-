@@ -11,7 +11,7 @@ Cette partie du projet utilisera pour certaines versions des correcteurs PID et 
 
 Bordure         |  ESIEA Minuscule           |  Nuage          |  Mandala   
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/30113273/115064386-26c7d400-9eed-11eb-8979-5c9a79ba1ebc.JPG" width="300" height="300">|![esiea](https://user-images.githubusercontent.com/30113273/115063816-5b875b80-9eec-11eb-9fc3-02121d5069ef.PNG)|![reel0](https://user-images.githubusercontent.com/30113273/115063562-064b4a00-9eec-11eb-9a3e-65f6cdf1b81f.PNG)![nuage](https://user-images.githubusercontent.com/30113273/115063754-47435e80-9eec-11eb-8258-fa095eb1c958.PNG)|![reel](https://user-images.githubusercontent.com/30113273/115063535-fdf30f00-9eeb-11eb-8133-ca84053e5e43.PNG)
+<img src="https://user-images.githubusercontent.com/30113273/115064386-26c7d400-9eed-11eb-8979-5c9a79ba1ebc.JPG" width="300" height="200">|![esiea](https://user-images.githubusercontent.com/30113273/115063816-5b875b80-9eec-11eb-9fc3-02121d5069ef.PNG)|![reel0](https://user-images.githubusercontent.com/30113273/115063562-064b4a00-9eec-11eb-9a3e-65f6cdf1b81f.PNG)![nuage](https://user-images.githubusercontent.com/30113273/115063754-47435e80-9eec-11eb-8258-fa095eb1c958.PNG)|![reel](https://user-images.githubusercontent.com/30113273/115063535-fdf30f00-9eeb-11eb-8133-ca84053e5e43.PNG)
 
 
 

@@ -69,3 +69,16 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 * [Encoder](https://github.com/PaulStoffregen/Encoder) - "Encoder counts pulses from quadrature encoded signals"
 * [PID_v2](https://github.com/gelraen/Arduino-PID-Library) - "PID controller"
 * Motor.h - Librairie de Mr Sylvain Bertrand
+
+## Equipes
+
+Meyssan KANZARI : Encodeurs, Correcteur PID_v2 et v1, méthode point à points, conception du projet
+Raphaël KOSKAS : Correcteur PID manuel, conception robot à moteur courant continu
+Richard TAQUET : Réalisations des formes et participation dans la réalisation
+Falitianna ANDRIANANTOANDRO : participation dans la réalisation
+
+## Remerciements
+
+Felicia IONASCU
+Sylvain BERTRAND
+Lionel PREVOST

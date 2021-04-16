@@ -79,6 +79,6 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 
 ## Remerciements
 
-Felicia IONASCU
-Sylvain BERTRAND
-Lionel PREVOST
+**Felicia IONASCU**  
+**Sylvain BERTRAND**  
+**Lionel PREVOST**  

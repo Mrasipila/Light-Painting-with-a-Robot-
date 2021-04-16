@@ -32,11 +32,11 @@ Si vous souhaitez ouvrir le code d'une forme particulière, télécharger le fic
 
 Trois codes de base (à compléter avec des instructions) :
 
-- PP
+- **PP**
   
   Contient le code de base pour le moteur pas à pas
 
-- CC
+- **CC**
   
   Contient le code de base pour le moteur à courant continu
   

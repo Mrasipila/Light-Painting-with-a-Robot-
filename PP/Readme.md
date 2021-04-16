@@ -15,7 +15,11 @@ image 0          |  image 1           |  image 2           |  image 3
 
 # Mais aussi : 
 
-<img src="https://user-images.githubusercontent.com/30113273/113608854-5b18d600-964b-11eb-9d58-5dd96d2e074c.jpg" width="300" height="550">
+Cube          |  Papillon           |  Diamant          
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/30113273/113608854-5b18d600-964b-11eb-9d58-5dd96d2e074c.jpg" width="300" height="550">|![ezgif com-gif-maker](https://user-images.githubusercontent.com/30113273/115061949-0fd3b280-9eea-11eb-8c5d-87db041a10ad.gif)|![ezgif-4-75bd36235860](https://user-images.githubusercontent.com/30113273/115065043-f2a0e300-9eed-11eb-979b-d801b41a1de9.gif)
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/30113273/115061949-0fd3b280-9eea-11eb-8c5d-87db041a10ad.gif)
+
+
+
 

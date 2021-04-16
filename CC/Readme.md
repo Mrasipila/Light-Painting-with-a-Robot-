@@ -15,7 +15,10 @@ Bordure         |  ESIEA Minuscule           |  Nuage          |  Mandala
 
 
 
+
 Pokeball         |  Spirale         |  Triangle           
+:-------------------------:|:-------------------------:|:-------------------------:
+(1 robot,sans correcteur,vitesse moteur)        |  (1 robot,sans correcteur,vitesse moteur)            |  (1 robot,sans correcteur,point à point) 
 :-------------------------:|:-------------------------:|:-------------------------:
 ![pokeball](https://user-images.githubusercontent.com/30113273/115063840-64782d00-9eec-11eb-9bee-b85afff8aa44.PNG)|<img src="https://user-images.githubusercontent.com/30113273/115063949-8ec9ea80-9eec-11eb-979e-9c469ae899d4.PNG" width="300" height="400">)|![triangle](https://user-images.githubusercontent.com/30113273/115063958-938e9e80-9eec-11eb-825e-9ad4aa39adb6.PNG)
 

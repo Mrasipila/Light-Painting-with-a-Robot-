@@ -65,13 +65,14 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 * [Encoder](https://github.com/PaulStoffregen/Encoder) - "Encoder counts pulses from quadrature encoded signals"
 * [PID_v2](https://github.com/gelraen/Arduino-PID-Library) - "PID controller"
 * Motor.h - Librairie de Mr Sylvain Bertrand
+* [Neopixel](https://github.com/adafruit/Adafruit_NeoPixel) - LED
 
 ## Equipes
 
 **Meyssan KANZARI :** Encodeurs, Correcteur PID_v2 et v1, méthode point à points, conception du projet,  
 recherche, recherche et test des différentes librairies (Fast_PID), implémentation des méthodes de calcul,  
 réalisation du cahier des charges, conception du robot à moteur pas à pas, simulation  
-**Raphaël KOSKAS :** Correcteur PID manuel
+**Raphaël KOSKAS :** Correcteur PID manuel, led
 **Richard TAQUET :** réalisations de formes en moteur à courant continu  
 **Falitianna ANDRIANANTOANDRO :** réalisation de formes en moteur à courant continu  
 

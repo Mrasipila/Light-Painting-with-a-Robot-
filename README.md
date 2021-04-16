@@ -72,10 +72,10 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 
 ## Equipes
 
-**Meyssan KANZARI :** Encodeurs, Correcteur PID_v2 et v1, méthode point à points, conception du projet
-**Raphaël KOSKAS :** Correcteur PID manuel, conception robot à moteur courant continu
-**Richard TAQUET :** Réalisations des formes et participation dans la réalisation
-**Falitianna ANDRIANANTOANDRO :** participation dans la réalisation
+**Meyssan KANZARI :** Encodeurs, Correcteur PID_v2 et v1, méthode point à points, conception du projet  
+**Raphaël KOSKAS :** Correcteur PID manuel, conception robot à moteur courant continu  
+**Richard TAQUET :** Réalisations des formes et participation dans la réalisation  
+**Falitianna ANDRIANANTOANDRO :** participation dans la réalisation  
 
 ## Remerciements
 

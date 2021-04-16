@@ -72,7 +72,7 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 **Meyssan KANZARI :** Encodeurs, Correcteur PID_v2 et v1, méthode point à points, conception du projet,  
 recherche, recherche et test des différentes librairies (Fast_PID), implémentation des méthodes de calcul,  
 réalisation du cahier des charges, conception du robot à moteur pas à pas, simulation  
-**Raphaël KOSKAS :** correcteur PID manuel, led
+**Raphaël KOSKAS :** correcteur PID manuel, led  
 **Richard TAQUET :** réalisation de formes en moteur à courant continu  
 **Falitianna ANDRIANANTOANDRO :** réalisation de formes en moteur à courant continu  
 

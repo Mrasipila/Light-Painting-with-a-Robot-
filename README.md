@@ -32,15 +32,11 @@ Si vous souhaitez ouvrir le code d'une forme particulière, télécharger le fic
 
 Trois codes de base (à compléter avec des instructions) :
 
-- PP_SINGLE_IMAGE.ino
+- PP
   
-  Contient le code de base pour le moteur pas à pas avec une seule image
-  
-- PP_MULTIPLE_IMAGES.ino
-  
-  Contient le code de base pour le moteur pas à pas avec plusieurs images
+  Contient le code de base pour le moteur pas à pas
 
-- CC.ino
+- CC
   
   Contient le code de base pour le moteur à courant continu
   

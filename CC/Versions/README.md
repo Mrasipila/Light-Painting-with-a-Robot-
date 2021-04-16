@@ -20,5 +20,5 @@ CC_V09 : Fonction neopixel pour plus de clareté
 
 CC_V10 : Ajout des correcteurs intégral et dérivé et de la fonction wait qui remplace delay
 
-CC_V12 : Implémentation de la fonction initialize() : gains ajustés en fonction de la consigne
+CC_V11 : Implémentation de la fonction initialize() : gains ajustés en fonction de la consigne
 

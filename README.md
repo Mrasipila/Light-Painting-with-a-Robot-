@@ -49,7 +49,7 @@ Examples :
 
 https://user-images.githubusercontent.com/30113273/113608778-44727f00-964b-11eb-8930-175f7c6b480f.mp4
 
-![1](https://user-images.githubusercontent.com/30113273/113608854-5b18d600-964b-11eb-9d58-5dd96d2e074c.jpg)
+
 
 
 Il y a plusieurs figures prêtes à l'emploi :

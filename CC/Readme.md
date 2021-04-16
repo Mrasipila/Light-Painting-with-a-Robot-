@@ -5,7 +5,7 @@
 
 Dans cette partie du projet nous avons réalisé des formes grâce à des robots munis de moteurs à courant continus, diversifiant ainsi le type de résultats possibles, on retrouvera la réalisation de plusieurs formes, présentées ci dessous 
 
-Cette partie du projet utilisera pour certaines versions des correcteurs PID et des Encodeurs via les librairies présentes dans le dossier "librairies" à la source de ce projet. La version V_12 présente un correcteur PID dont le calcul est réalisé manuellement dans la boucle du code Arduino.
+Cette partie du projet utilisera pour certaines versions des correcteurs PID et des Encodeurs via les librairies présentes dans le dossier "librairies" à la source de ce projet. La version V_11 présente un correcteur PID dont le calcul est réalisé manuellement dans la boucle du code Arduino.
 
 ## Les Resultats
 

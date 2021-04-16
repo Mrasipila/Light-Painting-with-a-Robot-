@@ -61,4 +61,11 @@ Il y a plusieurs figures prêtes à l'emploi :
 - Le Nuage
 - Le triangle
 - Le cube
-  
+
+## Librairies Utilisées
+
+Les librairies sont disponibles dans le dossier "librairie" de ce repertoire github
+
+* [Encoder](https://github.com/PaulStoffregen/Encoder) - "Encoder counts pulses from quadrature encoded signals"
+* [PID_v2](https://github.com/gelraen/Arduino-PID-Library) - "PID controller"
+* Motor.h - Librairie de Mr Sylvain Bertrand

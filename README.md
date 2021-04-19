@@ -67,7 +67,7 @@ Les librairies sont disponibles dans le dossier "librairie" de ce repertoire git
 * Motor.h - Librairie de Mr Sylvain Bertrand
 * [Neopixel](https://github.com/adafruit/Adafruit_NeoPixel) - LED
 
-## Equipes
+## Equipe
 
 **Meyssan KANZARI :** Encodeurs, Correcteur PID_v2 et v1, méthode point à points, conception du projet,  
 recherche, recherche et test des différentes librairies (Fast_PID), implémentation des méthodes de calcul,  
